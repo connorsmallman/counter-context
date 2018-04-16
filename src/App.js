@@ -1,6 +1,4 @@
 import React, { Component, createContext } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 export const CounterContext = createContext();
 

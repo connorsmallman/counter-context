@@ -36,9 +36,9 @@ class CounterProvider extends Component {
 }
 
 const Increment = () => (
-	<CounterContext.Consumer>
-		{context => (<button onClick={context.handleIncrement}>+</button>)}
-	</CounterContext.Consumer>
+  <CounterContext.Consumer>
+    {context => (<button onClick={context.handleIncrement}>+</button>)}
+  </CounterContext.Consumer>
 );
 
 const Decrement = () => (
@@ -56,14 +56,14 @@ const Count = () => (
 class Counter extends Component {
   static Increment = Increment
   static Decrement = Decrement
-	static Count = Count
-	render() {
-		return (
-			<CounterProvider>
-				{this.props.children}
-			</CounterProvider>
-		);
-	}
+  static Count = Count
+  render() {
+    return (
+      <CounterProvider>
+        {this.props.children}
+      </CounterProvider>
+    );
+  }
 }
 
 class App extends Component {

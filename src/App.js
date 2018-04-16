@@ -72,9 +72,9 @@ class App extends Component {
   render() {
     return (
       <Counter>
-        <Increment />
-        <Count />
-        <Decrement />
+        <Counter.Increment />
+        <Counter.Count />
+        <Counter.Decrement />
       </Counter>
     );
   }
